@@ -45,7 +45,7 @@ def stats(update, context):
             f'<b>├  🎮 Rᴀᴍ : {memory}%</b>\n' \
             f'<b>├  💽 Dɪsᴋ : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──《 🇧🇩 @@BangladeshHoarding 🇧🇩 》</b>'
+            f'<b>╰──《 🇧🇩 @@Bangladesh 🇧🇩 》</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
@@ -56,7 +56,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("Owner", "https://google.com")
-    buttons.buildbutton("Channel", "https://t.me/BangladeshHoarding")
+    buttons.buildbutton("Channel", "https://t.me/Bangladesh")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
